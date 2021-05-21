@@ -7,8 +7,7 @@ import Display from './Display';
 function App() {
     let [state, setState] = useState<number>(0)
 
-    const maxState = 5
-    const ins = () => {
+    const inc = () => {
         setState(state + 1);
     }
 
@@ -16,14 +15,13 @@ function App() {
         setState(0)
     }
 
-
     return (
         <div className="App">
-            <div className="disp">
-                <Display maxState={maxState} state={state}/>
+            <div className="display">
+                <Display state={state}/>
             </div>
             <div className="btn">
-                < Btn sum={ins} reset={reset} maxState={maxState} state={state}/>
+                < Btn inc={inc} reset={reset} state={state}/>
             </div>
         </div>
     )

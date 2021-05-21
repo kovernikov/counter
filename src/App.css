@@ -1,22 +1,25 @@
-.App {
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .App {
+    padding: 10px;
+    background-color: black;
     margin: 20px auto;
-    width: 200px;
+    width: 180px;
     border: aqua 3px solid;
     border-radius: 5px;
 }
 
-.disp {
-    border: aqua 3px solid;
+.display {
+    padding: 20px;
     background-color: aqua;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-.disp b p {
+.display b p {
     text-align: center;
     font-size: 35px;
 }
@@ -31,8 +34,9 @@
 
 .btns button {
     background-color: aqua;
+    padding: 0 10px;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 10px;
 
 }

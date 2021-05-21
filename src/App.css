@@ -1,0 +1,42 @@
+.App {
+    padding: 10px;
+}
+
+.App {
+    margin: 20px auto;
+    width: 200px;
+    border: aqua 3px solid;
+    border-radius: 5px;
+}
+
+.disp {
+    border: aqua 3px solid;
+    background-color: aqua;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.disp b p {
+    text-align: center;
+    font-size: 35px;
+}
+
+.btns {
+    border: aqua 3px solid;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.btns button {
+    background-color: aqua;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.active {
+    color: red;
+}

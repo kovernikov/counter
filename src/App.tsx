@@ -1,28 +1,17 @@
 import React, {useState} from 'react';
 import './App.css';
-import Btn from './Buttons';
-import Display from './Display';
+import {Display} from './components/Display';
+import { Button } from './components/Buttons';
+import {SettingsDisplay} from './components/SettingDisplay';
+import {DisplayCounter} from './components/DisplayCounter';
+import {CounterSettings} from './components/CounterSettings';
 
 
 function App() {
-    let [state, setState] = useState<number>(0)
-
-    const inc = () => {
-        setState(state + 1);
-    }
-
-    const reset = () => {
-        setState(0)
-    }
-
     return (
-        <div className="App">
-            <div className="display">
-                <Display state={state}/>
-            </div>
-            <div className="btn">
-                < Btn inc={inc} reset={reset} state={state}/>
-            </div>
+        <div className={'Approot'}>
+            <CounterSettings />
+            <DisplayCounter />
         </div>
     )
 }

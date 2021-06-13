@@ -3,11 +3,19 @@
     padding: 0;
 }
 
+.Approot {
+    display: flex;
+    align-items: center
+}
+
 .App {
-    padding: 10px;
+    display: block;
+    padding: 20px;
+    color: white;
     background-color: black;
-    margin: 20px auto;
-    width: 180px;
+    margin: 60px auto;
+    width: 270px;
+    height: 100%;
     border: aqua 3px solid;
     border-radius: 5px;
 }

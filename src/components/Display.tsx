@@ -1,11 +1,12 @@
 import React from 'react';
+import s from './Display.module.css';
 
 type DisplayType = {
     state: number
 
 }
 
-function Display(props: DisplayType) {
+function DisplayComponent(props: DisplayType) {
 
     const active = props.state === 5 ? 'active' : ''
 
@@ -16,4 +17,4 @@ function Display(props: DisplayType) {
     )
 }
 
-export default Display;
+export const Display = React.memo(DisplayComponent);
